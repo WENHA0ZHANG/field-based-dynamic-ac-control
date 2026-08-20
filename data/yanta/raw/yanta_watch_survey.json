@@ -1,0 +1,742 @@
+{
+    "survey_name": "Sleep control (vala_yanta, v1)",
+    "survey_id": "vala_yanta_v1",
+    "survey": [
+        {
+            "question": "I am...",
+            "question_id": "q_activity",
+            "response_options": [
+                {
+                    "text": "Going to sleep in my bedroom",
+                    "icon": "person_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_substances"
+                },
+                {
+                    "text": "Awake for the day in the morning",
+                    "icon": "person_wake_up",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_evening_activity"
+                },
+                {
+                    "text": "Not ready to take survey",
+                    "icon": "x",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                }
+            ]
+        },
+        {
+            "question": "Primary activity 1hr before falling asleep?",
+            "question_id": "q_evening_activity",
+            "response_options": [
+                {
+                    "text": "Electronic device(s) use",
+                    "icon": "screens",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Reading paper book",
+                    "icon": "book_open",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Work or study",
+                    "icon": "person_laptop",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Eating",
+                    "icon": "cutlery",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Physical activity",
+                    "icon": "barbell",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Meditation / Prayer",
+                    "icon": "person_meditation",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Other calming routines",
+                    "icon": "text_other",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                },
+                {
+                    "text": "Other",
+                    "icon": "text_other",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_falling_asleep_disturbance_thermal"
+                }
+            ]
+        },
+        {
+            "question": "Difficulties falling asleep last night due to too hot/cold?",
+            "question_id": "q_falling_asleep_disturbance_thermal",
+            "response_options": [
+                {
+                    "text": "No",
+                    "icon": "person_bed_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disturbance"
+                },
+                {
+                    "text": "Too hot",
+                    "icon": "flame",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disturbance"
+                },
+                {
+                    "text": "Too cold",
+                    "icon": "snowflake",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disturbance"
+                },
+                {
+                    "text": "Hot & Cold",
+                    "icon": "flame_snowflake_diagonal",
+                    "icon_background_color": "#000000",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disturbance"
+                }
+            ]
+        },
+        
+        {
+            "question": "Was your sleep last night disrupted before wake time?",
+            "question_id": "q_sleep_disturbance",
+            "response_options": [
+                {
+                    "text": "No",
+                    "icon": "person_bed_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_last_night"
+                },
+                {
+                    "text": "Yes",
+                    "icon": "person_bed_sleep_disrupted",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disrupted_beeper"
+                }
+            ]
+        },
+        
+        {
+            "question": "Was your sleep last night disrupted due to the beeper sound from AC?",
+            "question_id": "q_sleep_disrupted_beeper",
+            "response_options": [
+                {
+                    "text": "No",
+                    "icon": "person_bed_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disrupted_thermal"
+                },
+                {
+                    "text": "Yes",
+                    "icon": "sound_waves",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_disrupted_thermal"
+                }
+            ]
+        },
+        {
+            "question": "Was your sleep last night disrupted due to too hot/cold?",
+            "question_id": "q_sleep_disrupted_thermal",
+            "response_options": [
+                {
+                    "text": "No",
+                    "icon": "person_bed_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_last_night"
+                },
+                {
+                    "text": "Too hot",
+                    "icon": "flame",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_last_night"
+                },
+                {
+                    "text": "Too cold",
+                    "icon": "snowflake",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_last_night"
+                },
+                {
+                    "text": "Hot & Cold",
+                    "icon": "flame_snowflake_diagonal",
+                    "icon_background_color": "#000000",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_last_night"
+                }
+            ]
+        },
+        {
+            "question": "Rate your bedroom's thermal sensation throughout the night.",
+            "question_id": "q_thermal_sensation_last_night",
+            "response_options": [
+                {
+                    "text": "Cold",
+                    "icon": "snowflake",
+                    "icon_background_color": "#1229ab",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_last_night"
+                },
+                {
+                    "text": "Neutral",
+                    "icon": "thermometer",
+                    "icon_background_color": "#761E5F",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_last_night"
+                },
+                {
+                    "text": "Hot",
+                    "icon": "flame",
+                    "icon_background_color": "#D91212",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_last_night"
+                },
+                {
+                    "text": "Hot & Cold",
+                    "icon": "flame_snowflake_diagonal",
+                    "icon_background_color": "#000000",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_last_night"
+                }
+            ]
+        },
+        {
+            "question": "Last night, would you have preferred to be..",
+            "question_id": "q_thermal_preference_last_night",
+            "response_options": [
+                {
+                    "text": "Cooler",
+                    "icon": "snowflake",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_last_night_air_dryness"
+                },
+                {
+                    "text": "No change",
+                    "icon": "emoticon_happy_3",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_last_night_air_dryness"
+                },
+                {
+                    "text": "Warmer",
+                    "icon": "flame",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_last_night_air_dryness"
+                }
+            ]
+        },
+        {
+            "question": "Last night's bedroom air dryness level?",
+            "question_id": "q_last_night_air_dryness",
+            "response_options": [
+                {
+                    "text": "Too dry",
+                    "icon": "dust",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_quality"
+                },
+                {
+                    "text": "Comfortable",
+                    "icon": "emoticon_happy_4",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_quality"
+                },
+                {
+                    "text": "Too humid",
+                    "icon": "drops",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleep_quality"
+                }
+            ]
+        },
+        {
+            "question": "How would you rate your overall sleep quality?",
+            "question_id": "q_sleep_quality",
+            "response_options": [
+                {
+                    "text": "Very good",
+                    "icon": "emoticon_happy_4",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_morning"
+                },
+                {
+                    "text": "Fairly good",
+                    "icon": "emoticon_neutral",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_morning"
+                },
+                {
+                    "text": "Fairly bad",
+                    "icon": "emoticon_sad",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_morning"
+                },
+                {
+                    "text": "Very bad",
+                    "icon": "emoticon_sad",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_morning"
+                }
+            ]
+        },
+        {
+            "question": "How sleepy are you right now?",
+            "question_id": "q_sleepiness_morning",
+            "response_options": [
+                {
+                    "text": "Extremely Alert",
+                    "icon": "emoticon_happy",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Very Alert",
+                    "icon": "emoticon_happy_4",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Alert",
+                    "icon": "emoticon_happy_5",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Neither alert nor sleepy",
+                    "icon": "emoticon_neutral",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Sleepy",
+                    "icon": "emoticon_yawn",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Very sleepy",
+                    "icon": "emoticon_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Extremely sleepy",
+                    "icon": "emoticon_sleep_2",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                }
+            ]
+        },
+        {
+            "question": "In the last 5 hours, have you consumed alcohol or caffeine?",
+            "question_id": "q_substances",
+            "response_options": [
+                {
+                    "text": "No",
+                    "icon": "text_no",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_evening"
+                },
+                {
+                    "text": "Yes, caffeine",
+                    "icon": "beverage_energy_drink_coffee",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_evening"
+                },
+                {
+                    "text": "Yes, alcohol",
+                    "icon": "beverage_alcohol",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_evening"
+                },
+                {
+                    "text": "Yes, both",
+                    "icon": "beverage_energy_drink_coffee_alcohol",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_sensation_evening"
+                }
+            ]
+        },
+        {
+            "question": "Rate your bedroom's thermal sensation now.",
+            "question_id": "q_thermal_sensation_evening",
+            "response_options": [
+                {
+                    "text": "Cold",
+                    "icon": "snowflake",
+                    "icon_background_color": "#1229ab",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_evening"
+                },
+                {
+                    "text": "Slightly Cool",
+                    "icon": "snowflake",
+                    "icon_background_color": "#00C0FF",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_evening"
+                },
+                {
+                    "text": "Neutral",
+                    "icon": "thermometer",
+                    "icon_background_color": "#A0FF40",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_evening"
+                },
+                {
+                    "text": "Slightly Warm",
+                    "icon": "flame",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_evening"
+                },
+                {
+                    "text": "Hot",
+                    "icon": "flame",
+                    "icon_background_color": "#D91212",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_thermal_preference_evening"
+                }
+            ]
+        },
+        {
+            "question": "Right now, would you prefer to be...?",
+            "question_id": "q_thermal_preference_evening",
+            "response_options": [
+                {
+                    "text": "Cooler",
+                    "icon": "snowflake",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_hour"
+                },
+                {
+                    "text": "No Change",
+                    "icon": "emoticon_happy_3",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_hour"
+                },
+                {
+                    "text": "Warmer",
+                    "icon": "flame",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_hour"
+                }
+            ]
+        },
+        {
+            "question": "What hour do you plan to wake up tomorrow?",
+            "question_id": "q_wake_hour",
+            "response_options": [
+                {
+                    "text": "5",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "6",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "7",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "8",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "9",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "10",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "11",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "12",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "13",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                },
+                {
+                    "text": "14",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_wake_minute"
+                }
+            ]
+        },
+        {
+            "question": "What minute do you plan to wake up tomorrow?",
+            "question_id": "q_wake_minute",
+            "response_options": [
+                {
+                    "text": "00",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_evening"
+                },
+                {
+                    "text": "10",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_evening"
+                },
+                {
+                    "text": "20",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_evening"
+                },
+                {
+                    "text": "30",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_evening"
+                },
+                {
+                    "text": "40",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_evening"
+                },
+                {
+                    "text": "50",
+                    "icon": "clock",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": "q_sleepiness_evening"
+                }
+            ]
+        },
+        {
+            "question": "How sleepy are you right now?",
+            "question_id": "q_sleepiness_evening",
+            "response_options": [
+                {
+                    "text": "Extremely Alert",
+                    "icon": "emoticon_happy",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Very Alert",
+                    "icon": "emoticon_happy_4",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Alert",
+                    "icon": "emoticon_happy_5",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Neither alert nor sleepy",
+                    "icon": "emoticon_neutral",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Sleepy",
+                    "icon": "emoticon_yawn",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Very sleepy",
+                    "icon": "emoticon_sleep",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                },
+                {
+                    "text": "Extremely sleepy",
+                    "icon": "emoticon_sleep_2",
+                    "icon_background_color": "#F1A62E",
+                    "use_sf_symbols": false,
+                    "sf_symbols_color": "#000000",
+                    "next_question_id": ""
+                }
+            ]
+        }
+    ]
+}
