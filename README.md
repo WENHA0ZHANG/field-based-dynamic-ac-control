@@ -75,7 +75,6 @@ Additional files:
 
 - `data/yanta/raw/yanta_watch_survey.json` and `data/vala/raw/vala_watch_survey.json`: Cozie watch-survey schema used for the evening and morning EMAs.
 - `data/yanta/raw/yanta_outdoor_pm25_data.parquet.gzip`: hourly outdoor PM2.5 by Singapore region (north, east, south, west, central).
-- Some `raw/` folders have a `-2` suffix (e.g. `yanta003-2`). These are extra Qualtrics collections for the same participant and are folded into the corresponding `processed/` folder.
 
 `raw/` keeps the original database export (UTC timestamps and extra device/system metadata). `processed/` is the version intended for reuse: timestamps are converted to `Asia/Singapore`, selected identifiers are removed, and Atmocube temperature/humidity include calibrated columns (`temperature_calibrated`, `humidity_calibrated`).
 
